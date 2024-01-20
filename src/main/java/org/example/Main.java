@@ -1,6 +1,7 @@
 package org.example;
 
 import org.example.behaviorial.mediator.MediatorDemo;
+import org.example.behaviorial.memento.MementoDemo;
 import org.example.behaviorial.middleware.MiddlewareDemo;
 import org.example.behaviorial.visitor.VisitorDemo;
 import org.example.creating.abstractFactory.AbstractFactoryDemo;
@@ -17,5 +18,6 @@ public class Main {
         MediatorDemo.Execute();
         MiddlewareDemo.execute();
         VisitorDemo.execute();
+        MementoDemo.execute();
     }
 }
