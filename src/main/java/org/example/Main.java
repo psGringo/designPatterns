@@ -1,5 +1,6 @@
 package org.example;
 
+import org.example.behaviorial.mediator.MediatorDemo;
 import org.example.creating.abstractFactory.AbstractFactoryDemo;
 import org.example.creating.factory.FactoryDemo;
 import org.example.structural.decorator.house.HouseDecoratorDemo;
@@ -11,5 +12,6 @@ public class Main {
         FactoryDemo.Execute();
         HouseDecoratorDemo.Execute();
         MessengerDecoratorDemo.Execute();
+        MediatorDemo.Execute();
     }
 }
