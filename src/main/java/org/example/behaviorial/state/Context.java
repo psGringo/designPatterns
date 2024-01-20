@@ -11,7 +11,6 @@ public class Context {
         state.Stop();
     }
 
-
     public void setState(State state) {
         this.state = state;
     }
