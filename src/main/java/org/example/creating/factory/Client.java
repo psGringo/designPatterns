@@ -2,20 +2,13 @@ package org.example.creating.factory;
 
 public class Client {
 
-    private IProduct product;
+    private Factory factory;
 
-    private IProduct Produce(Factory factory) {
-        return factory.createProduct();
+    public Client(Factory factory) {
+        this.factory = factory;
     }
 
-    public IProduct getProduct() {
-        return product;
-    }
-
-    public Client(boolean needProductA) {
-        if (needProductA)
-            product = Produce(new FactoryA());
-        else
-            product = Produce(new FactoryB());
+    public void doStuff() {
+        System.out.println(factory.createProduct().getClass().getSimpleName());
     }
 }
